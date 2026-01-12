@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ASeric00_lab_07</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.20" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Repositories\" />
+    <None Remove="Models\" />
+    <None Remove="Logic\" />
+    <None Remove="Configuration\" />
+    <None Remove="Exceptions\" />
+    <None Remove="DTO\" />
+    <None Remove="Scripts\" />
+    <None Remove="FIlters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Models\" />
+    <Folder Include="Logic\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="DTO\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="FIlters\" />
+  </ItemGroup>
+</Project>

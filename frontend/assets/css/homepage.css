@@ -1,0 +1,218 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+header {
+    background-color: #2a9d8f;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+header h2 {
+    margin: 0;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    color: #2a9d8f;
+    margin-top: 30px;
+}
+
+/* Submenu styling */
+#submenu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#submenu li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.city-button {
+    background-color: #264653;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.city-button:hover {
+    background-color: #2a9d8f;
+}
+
+/* Main container for weather data */
+#weather-data {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f7f7f7; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Title for the weather data */
+#weather-data h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333; /* Dark gray for text */
+}
+
+/* For each data point (Conditions, Temperature, etc.) */
+#weather-data p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555; /* Medium gray for the data */
+}
+
+/* Style for the icons (e.g., sun, cloud, etc.) */
+#weather-data p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Icon styling inside the weather data (for conditions like sunny, cloudy, etc.) */
+#weather-data .weather-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Custom date and time formatting for timestamps */
+#weather-data p.timestamp {
+    font-size: 1rem;
+    color: #888; /* Light gray for timestamp */
+    font-style: italic;
+}
+
+/* For weather table */
+#weather-data table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#weather-data th, #weather-data td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#weather-data th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #333;
+}
+
+#weather-data td {
+    background-color: #ffffff;
+}
+
+#weather-data td:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#weather-data td .condition-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Current forecast in cities - table */
+.stylized-table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stylized-table th, .stylized-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.stylized-table th {
+    background-color: #264653;
+    color: white;
+}
+
+.stylized-table td {
+    background-color: #f9f9f9;
+}
+
+.stylized-table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+.stylized-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Conditions icons */
+.forecast-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2a9d8f;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}

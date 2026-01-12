@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/ASeric00-lab-07.props" />
+</Project>

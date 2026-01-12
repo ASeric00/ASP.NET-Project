@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TodaysForecast</title>
+        <link rel="stylesheet" href="/assets/css/homepage.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h2>TodaysForecast</h2>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/admin-page.html">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Submenu for choosing city -->
+        <div>
+            <h2>Choose city</h2>
+            <ul id="submenu">
+                <li><button class="city-button" data-city="Split">Split</button></li>
+                <li><button class="city-button" data-city="Zagreb">Zagreb</button></li>
+                <li><button class="city-button" data-city="Rijeka">Rijeka</button></li>
+                <li><button class="city-button" data-city="Osijek">Osijek</button></li>
+                <li><button class="city-button" data-city="Dubrovnik">Dubrovnik</button></li>
+            </ul>
+        </div>
+    
+        <!-- Weather info from selected city will be shown here -->
+        <div id="weather-data">
+            <!-- Dynamic content will be injected here -->
+        </div>
+    
+        <h1>Current forecast in Croatian cities</h1>
+    
+        <!-- Showing latest records from all cities -->
+        <div>
+            <table id="all-cities-table" class="stylized-table">
+                <!-- TABLE DATA -->
+                <!-- To be added by JavaScript -->
+            </table>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Ante Šerić. All rights reserved.</p>
+        </footer>
+        
+    
+        <script src="/assets/js/list-all-stations.js" type="module" defer></script>
+        <script src="/assets/js/city-weather.js" type="module" defer></script>
+    
+    </body>
+</html>
